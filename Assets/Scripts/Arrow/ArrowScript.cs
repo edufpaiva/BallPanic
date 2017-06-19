@@ -27,6 +27,16 @@ public class ArrowScript : MonoBehaviour {
         if(col.gameObject.tag == "TopBrick") {
             gameObject.SetActive(false);
         }
+
+        if(col.gameObject.tag == "LargestBall" 
+            || col.gameObject.tag == "LargeBall"
+            || col.gameObject.tag == "MediumBall" 
+            || col.gameObject.tag == "SmallBall" 
+            || col.gameObject.tag == "SmallestBall") {
+
+            Destroy(gameObject);
+
+        }
     }
 
 
